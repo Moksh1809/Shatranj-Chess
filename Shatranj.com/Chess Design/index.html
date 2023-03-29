@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shatranj-Chess</title>
+	<link rel="icon" href="black knight-digital.png" type="image/icon">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="setup();">
+
+<pre><h1 align="center" class="shatranj"><u><b><p class="chess" align="center">Shatranj-Chess</p></b></u></h1></pre>
+	<br><br><br><br><br>
+<p id="turnInfo" class="Para"><u>Player's turn: <b>White</b></u></p><br><br><br><br><br>
+<center>
+<section id="board">
+    <div class="overlay" id="promotionMessage">
+        <div class="overlay-inner">
+            <span class="overlay-title">Promotion!!!</span>
+            <p class="overlay-text" id="alertText"></p>
+            <ul id="promotionList" class="white">
+                <li><a href="#" class="promotion-button queen" onclick="promote('queen');"></a></li>
+                <li><a href="#" class="promotion-button castle" onclick="promote('castle');"></a></li>
+                <li><a href="#" class="promotion-button bishop" onclick="promote('bishop');"></a></li>
+                <li><a href="#" class="promotion-button knight" onclick="promote('knight');"></a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="overlay" id="errorMessage">
+		<div class="overlay-inner">
+			<span class="overlay-title">Error!!!</span>
+			<p class="overlay-text" id="errorText"></p>
+			<a href="#" class="overlay-button" onclick="closeError();">Close</a>
+		</div>
+	</div>
+	<div class="overlay" id="endMessage">
+		<div class="overlay-inner">
+			<span class="overlay-title">Game Over!!!</span>
+			<p class="overlay-text" id="endText"></p>
+			<a href="#" class="overlay-button" onclick="newGame();">New Game</a>
+		</div>
+	</div>
+</section>
+<div style="cursor: default;">
+<script type="text/javascript" src="js/scripts.js" style="cursor: default;"></script>
+</div>
+</center>
+<p align="right" class="simple">
+	Need Help or New To Chess <a href="index 2.html" target="_blank"><font style="cursor: help;">?</font></a></font><br>
+	Click the question mark for help.
+</p>
+<hr size="20" color="#5400ff">
+<address>
+	<p><font class="creater">Created By: <a href="mailto:mokshh0009@gmail.com">Moksh</a></font></p>
+</address>
+</body>
+</html>
